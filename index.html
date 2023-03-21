@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/dc73780894.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- Video player -->
+    <section class="player">
+        <video controls src="video/snow.mp4"></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+        <!-- metaData -->
+        <div class="metaData">
+            <ul class="hashtags">
+                <li>#Jay</li>
+                <li>#issue1</li>
+                <li>#developer</li>
+            </ul>
+            <div class="titleAndBtn">
+                <span class="title">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore sit corrupti laboriosam numquam, vero, expedita
+                    et exercitationem officia eaque dignissimos obcaecati nobis laudantium? In architecto qui earum perferendis delectus
+                    laborum?
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="views">
+                <span class="views">1M views 1 month</span>
+            </div>
+        </div>
+        <!-- actions -->
+        <ul class="actions">
+            <li><button><i class="fas fa-thumbs-up"></i></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i></button></li>
+            <li><button><i class="fas fa-share"></i></button></li>
+            <li><button><i class="fas fa-plus"></i></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
+        </ul>
+        <!-- channel Description -->
+        <div class="channel">
+            <div class="metaData">
+                <img src="image/avatar.jpg" alt="Img">
+                <div class="info">
+                    <span class="name">Jay</span>
+                    <span class="subscribers">1M subscribers</span>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </div>
+    </section>
+    <!-- upNext -->
+    <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+            <li class="item">
+                <img src="image/avatar.jpg" alt="Img">
+                <div class="info">
+                    <span class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nesciunt cum sequi labore sed, ullam ipsa temporibus numquam, eaque minima quam sit molestiae ea enim assumenda aliquid? Deleniti, maxime eveniet?</span>
+                    <span class="name">Jay</span>
+                    <span class="views">777K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <img src="image/casino.jpg" alt="Img">
+                <div class="info">
+                    <span class="title">Casino ipsum dolor sit amet consectetur adipisicing elit. Hic, nesciunt cum sequi
+                        labore sed, ullam ipsa temporibus numquam, eaque minima quam sit molestiae ea enim assumenda
+                        aliquid? Deleniti, maxime eveniet?</span>
+                    <span class="name">Jay</span>
+                    <span class="views">666K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <img src="image/book.jpg" alt="Img">
+                <div class="info">
+                    <span class="title">Book ipsum dolor sit amet consectetur adipisicing elit. Hic, nesciunt cum sequi
+                        labore sed, ullam ipsa temporibus numquam, eaque minima quam sit molestiae ea enim assumenda
+                        aliquid? Deleniti, maxime eveniet?</span>
+                    <span class="name">Jay</span>
+                    <span class="views">555K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+        </ul>
+    </section>
 </body>
+
 </html>
