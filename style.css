@@ -48,4 +48,14 @@ header .icons .fa-search {
 }
 
 /* Video Player */
-
+.player {
+    position: sticky;
+    top: 0;
+    background: var(--black-color);
+    text-align: center;
+}
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
