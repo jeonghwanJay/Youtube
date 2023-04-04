@@ -3,12 +3,14 @@
   --white-color: #fff;
   --black-color: #140a00;
   --blue-color: #045fd4;
-  --red-color: #ff0000;
+  --red-color: #fe0000;
   --grey-dark-color: #909090;
   --grey-light-color: #e0e0e0;
 
   /* Size */
   --padding: 12px;
+  --margin: 12px;
+  --border-radius: 12px;
   --avatar-size: 36px;
 
   /* Font Size */
@@ -68,11 +70,11 @@ header .icons .fa-search {
 .player video {
   width: 100%;
   height: 100%;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 /* Video info */
-.info {
+body .info {
   padding: var(--padding);
 }
 
@@ -139,6 +141,9 @@ header .icons .fa-search {
 .channel {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  /* padding: calc(var(--padding) / 2) 0; */
 }
 
 .channel .metaData {
@@ -150,6 +155,7 @@ header .icons .fa-search {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
+  /* margin-right: calc(var(--padding) / 2); */
 }
 
 .channel .metaData .info {
@@ -170,5 +176,71 @@ header .icons .fa-search {
 .channel .subscribe {
   text-transform: uppercase;
   font-size: var(--font-medium);
+  font-weight: normal;
   color: var(--red-color);
+}
+
+/* Up Next */
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.upNext > .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: 10px;
+}
+
+.upNext .item {
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+  /* margin-right: var(--padding); */
+}
+
+.upNext .item .img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.upNext .item .info {
+    display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+  padding: 0 var(--padding) var(--padding) var(--padding);
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+/* .upNext .item .info {
+ */
+/* } */
+
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+
+/* media */
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding);
+  }
 }
